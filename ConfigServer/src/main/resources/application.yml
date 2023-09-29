@@ -1,0 +1,35 @@
+server:
+  port: 8085
+  
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8763/eureka
+    register-with-eureka: true
+    
+spring:   
+  application:
+    name: CONFIG-SERVER
+    
+  cloud:
+    config:
+      server:
+        git: 
+          uri: https://github.com/PrachiVerma8498/MicroConfigurationService
+          clone-on-start: true
+#  config:
+#    import: optional:configserver:http://localhost:8085
+    
+ 
+#eureka:
+#  instance:
+#    prefer-ip-address: true
+#  client:
+#    service-url:
+#      defaultZone:  http://localhost:8763/eureka
+#    fetch-registry: true
+#    register-with-eureka: true    
+
