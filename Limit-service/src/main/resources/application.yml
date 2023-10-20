@@ -1,0 +1,11 @@
+spring:
+  config:
+    import: optional:configserver:http://localhost:8765
+    
+server:
+  port: 3596
+  
+limit-service.minimum: 2
+limit-service.maximum: 1000
+    
+    

@@ -1,0 +1,6 @@
+server:
+  port: 3546
+  
+spring:
+  application:
+    name: spring-cloud-config-server
