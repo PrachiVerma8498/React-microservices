@@ -1,0 +1,17 @@
+server:
+  port: 4336
+spring:
+  application:
+    name: Currency-conversion
+  config:
+    import: optional:configserver:http//localhost:4335
+    
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:4335/eureka
+    register-with-eureka: true
+  instance:
+    hostname: localhost
+
+    

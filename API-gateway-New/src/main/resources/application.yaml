@@ -1,0 +1,26 @@
+server:
+  port: 5341
+spring:
+  application:
+    name: API-gateway
+#  cloud:
+#    gateway:
+#      discovery:
+#        locator:
+#          enabled: true
+#          lower-case-service-id: true
+#      routes:
+#      - id: CURRENCY-CONVERSION
+#        uri: lb://CURRENCY-CONVERSION
+#        predicates: 
+#         - Path=/currencyExchange/** 
+
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:4335/eureka
+  instance:
+    hostname: localhost
+    prefer-ip-address: true
+    

@@ -1,0 +1,12 @@
+server.port: 4335
+
+spring:
+  application:
+    name: naming-server
+    
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+  instance:
+    hostname: localhost

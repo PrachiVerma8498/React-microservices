@@ -1,11 +1,17 @@
 spring:
+  application:
+    name: limit-service
   config:
-    import: optional:configserver:http://localhost:8765
+    import: optional:configserver:http://localhost:3546
     
+  profiles:
+    active:  test
+   
+   
 server:
   port: 3596
   
-limit-service.minimum: 2
-limit-service.maximum: 1000
+#limit-service.minimum: 2
+#limit-service.maximum: 1000
     
     

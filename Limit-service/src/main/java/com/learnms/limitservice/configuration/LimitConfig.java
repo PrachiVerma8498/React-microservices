@@ -17,7 +17,6 @@ import lombok.ToString;
 @Setter
 @ToString
 public class LimitConfig {
-	
 	private int maximum;
 	private int minimum;
 	

@@ -4,3 +4,11 @@ server:
 spring:
   application:
     name: spring-cloud-config-server
+
+  cloud:
+    config:
+      server:
+        git:
+          uri:  https://github.com/PrachiVerma8498/git-localconfig-repo #file:///c/Users/praverma/Documents/GitHub/git-localconfig-repo # https://github.com/PrachiVerma8498/git-localconfig-repo
+          #uri: file:///c/Users/praverma/Documents/GitHub/git-localconfig-repo
+          
